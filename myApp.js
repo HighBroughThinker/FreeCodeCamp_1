@@ -17,7 +17,7 @@ var absolutePath = __dirname + "/views/index.html";
 app.get('/json', (req, res) => {
     res.json({"message": "Hello json"});
 
-    if (process.env.VAR_NAME === "uppercase") {
+    if (process.env.MESSAGE_STYLE === "uppercase") {
         response = "Hello json".toUpperCase();
     } else {
         response = "Hello json";
